@@ -1,0 +1,8 @@
+type Inventory {
+    playerID: ID!
+}
+
+type Query {
+    inventory(playerID: ID!): Inventory!
+    item(playerID: ID!): [Item!]
+}
